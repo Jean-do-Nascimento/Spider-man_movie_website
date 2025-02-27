@@ -1,12 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvel</title>
-    <link rel="stylesheet" href="dist/css/main.css">
+    <title>Marvel - Spider-Man</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/main.css">
 </head>
+
 <body>
-    <h1>Olá</h1>
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__content__navbar">
+                <nav class="hero__content__navbar__nav">
+                    <img src="./src/images/mdi_spider.png" alt="nav-logo" class="hero__content__navbar__nav__logo">
+
+                    <ul class="hero__content__navbar__nav__tabs">
+                        <li class="hero__content__navbar__nav__tabs__item">
+                            <a class="hero__content__navbar__nav__tabs__item--link" href="#">Início</a>
+                        </li>
+                        <li class="hero__content__navbar__nav__tabs__item">
+                            <a class="hero__content__navbar__nav__tabs__item--link" href="#">Ingressos</a>
+                        </li>
+                        <li class="hero__content__navbar__nav__tabs__item">
+                            <a class="hero__content__navbar__nav__tabs__item--link" href="#">Cinemas</a>
+                        </li>
+                        <li class="hero__content__navbar__nav__tabs__item">
+                            <a class="hero__content__navbar__nav__tabs__item--link" href="#">iMAX</a>
+                        </li>
+                        <li class="hero__content__navbar__nav__tabs__item">
+                            <a class="hero__content__navbar__nav__tabs__item--link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+
+                    <button class="hero__content__navbar__button">Garanta Já Seu Ingresso</button>
+                </nav>
+            </div>
+
+            <div class="hero__content__branding">
+                <img class="hero__content__branding__title" src="./src/images/Spider-man-title.png" alt="title1">
+                <img class="hero__content__branding__avatar" src="src/images/spidey.png" alt="avatar">
+                <img class="hero__content__branding__overlay" src="src/images/Spider-man-transparent.png" alt="title2">
+            </div>
+        </div>
+
+        <div class="hero__content__description">
+            <h2>Origem</h2>
+
+            <p>
+                É o culminar de uma trilogia que conta a história de origem de Peter Parker, o jovem Homem-Aranha, amigão da vizinhança, no Universo Cinematográfico Marvel (MCU).
+            </p>
+        </div>
+
+        <div class="hero__content__availableTheaters">
+            <h2> Assista com iMAX</h2>
+
+            <button>Confira aqui!</button>
+        </div>
+    </section>
 </body>
+
 </html>

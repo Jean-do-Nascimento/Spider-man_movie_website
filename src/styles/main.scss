@@ -1,5 +1,45 @@
-$bgColor: pink;
+@use 'variaveis';
+@use 'hero';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: $bgColor;
+    background-color: variaveis.$corDeFundo;
+    height: 1240px;
+    width: 1920px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@mixin text ($fontSize: 30px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoPrincipal;
+}
+
+@mixin title($fontSize: 50px) {
+    @include text($fontSize);
+    font-weight: bold;
+    color: variaveis.$corTextoPrincipal;
+}
+
+.text--names {
+    @include text(30px);
+    font-weight: bold;
+}
+
+.text--light {
+    @include text;
+    font-weight: light;
+}
+
+.text--small {
+    @include text(20px);
+    font-weight: medium;
 }

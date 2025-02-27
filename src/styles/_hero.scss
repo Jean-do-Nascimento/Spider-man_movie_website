@@ -1,0 +1,182 @@
+@use 'variaveis';
+
+.hero {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__content {
+        display: flex;
+        align-items: center;
+
+
+        &__navbar {
+            position: relative;
+            z-index: 1;
+
+            &__nav {
+                display: flex;
+                max-width: 1920px;
+
+                &__logo {
+                    position: relative;
+                    margin-left: 5vw;
+                    align-items: center;
+                    margin-top: 18px;
+                }
+
+                &__tabs {
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 26vw;
+                    margin-top: 14px;
+
+                    &__item {
+                        font-size: 24px;
+                        margin-right: 40px;
+                        font-family: Archivo, sans-serif;
+                        font-size: 22px;
+
+                        &--link {
+                            color: #fff;
+                            text-decoration: none;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: variaveis.$corTextoSecundario;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__button {
+                word-wrap: normal;
+                align-items: center;
+                height: 34px;
+                padding: 0px 24px;
+                margin-top: 48px;
+                margin-left: 16vw;
+                border: none;
+                border-radius: 20px;
+                font-family: Archivo, sans-serif;
+                font-weight: semibold;
+                background-color: variaveis.$corTextoSecundario;
+                color: variaveis.$corTextoPrincipal;
+                font-size: 20px;
+                border: 2px solid #AA0001;
+                box-shadow: 0 0 5px #AA0001, 0 0 10px #AA0001, 0 0 15px #AA0001, 0 0 20px #AA0001;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #AA0001;
+                    transition: .4s ease;
+                    border: 2px solid #fff;
+                    box-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+                }
+            }
+        }
+
+
+        &__branding {
+            max-width: 1024px;
+
+            &__title {
+                width: 1080px;
+                position: absolute;
+                top: 52%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: 100%;
+                height: auto;
+            }
+
+            &__avatar {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 1920px;
+                height: auto;
+            }
+
+            &__overlay {
+                width: 1080px;
+                position: absolute;
+                top: 52%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        &__description {
+            margin-left: 5vw;
+            margin-top: 45%;
+
+            h2 {
+                max-width: 80px;
+                padding: 6px;
+            }
+        }
+
+        &__availableTheaters {
+            margin-left: 80vw;
+            margin-top: -17vh;
+
+
+            h2 {
+                max-width: 240px;
+                padding: 10px;
+                text-align: center;
+                margin-bottom: 12px;
+            }
+
+            button {
+                align-items: center;
+                height: 34px;
+                padding: 0px 32px;
+                margin-left: 32px;
+                border: none;
+                font-family: Archivo, sans-serif;
+                font-weight: semibold;
+                background-color: variaveis.$corTextoSecundario;
+                color: variaveis.$corTextoPrincipal;
+                font-size: 20px;
+                border: 2px solid #AA0001;
+                box-shadow: 0 0 5px #AA0001, 0 0 10px #AA0001, 0 0 15px #AA0001, 0 0 20px #AA0001;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #AA0001;
+                    transition: .4s ease;
+                    border: 2px solid #fff;
+                    border-radius: 10px;
+                    box-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+                }
+            }
+        }
+
+        &__description,
+        &__availableTheaters {
+            z-index: 1;
+            position: relative;
+            max-width: 420px;
+            color: #fff;
+            font-family: Archivo, sans-serif;
+
+            h2 {
+                font-size: 20px;
+                font-weight: 200;
+                border: 2px solid #fff;
+                margin-bottom: 18px;
+            }
+        }
+    }
+}
