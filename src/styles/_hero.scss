@@ -128,14 +128,13 @@
 
         &__availableTheaters {
             margin-left: 80vw;
-            margin-top: -17vh;
+            margin-top: -12vh;
 
 
             h2 {
                 max-width: 240px;
-                padding: 10px;
+                padding: 8px;
                 text-align: center;
-                margin-bottom: 12px;
             }
 
             button {
@@ -143,6 +142,7 @@
                 height: 34px;
                 padding: 0px 32px;
                 margin-left: 32px;
+                margin-top: 16px;
                 border: none;
                 font-family: Archivo, sans-serif;
                 font-weight: semibold;
