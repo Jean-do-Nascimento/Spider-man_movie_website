@@ -43,3 +43,79 @@ body::-webkit-scrollbar {
     @include text(20px);
     font-weight: medium;
 }
+
+
+@media (max-width: 767px) {
+    body {
+        background-color: #0c0d1a;
+        max-height: 1000px;
+        max-width: 767px;
+        height: auto;
+        width: auto;
+    }
+
+
+    .footer__content {
+        width: 767px;
+        height: 360px;
+        position: relative;
+        margin-top: 760px;
+        background-color: #0c0d1a;
+        font-family: Archivo, sans-serif;
+        text-align: center;
+
+
+        &__tabs {
+            max-width: 700px;
+            margin-left: 38px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            list-style: none;
+            text-transform: uppercase;
+            text-align: center;
+
+            &__item {
+                margin-top: 54px;
+                border-bottom: transparent;
+                padding-bottom: 12px;
+                border-right: transparent;
+
+                &--link {
+                    text-decoration: none;
+                    color: variaveis.$corTextoPrincipal;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        h6 {
+            margin-top: 60px;
+            font-size: 20px;
+            color: variaveis.$corTextoPrincipal;
+            font-style: italic;
+            font-weight: 400;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-color: #0c0d1a;
+        max-height: 1900px;
+        max-width: 1023px;
+        height: auto;
+        width: auto;
+    }
+
+    .footer__content {
+
+        h6 {
+            margin-top: 820px;
+            margin-top: 40px;
+            font-size: 20px;
+            color: variaveis.$corTextoPrincipal;
+            font-style: italic;
+            font-weight: 100;
+        }
+    }
+}

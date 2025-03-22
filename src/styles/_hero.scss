@@ -10,9 +10,8 @@
     background-size: cover;
 
     &__content {
-        display: flex;
+        display: block;
         align-items: center;
-
 
         &__navbar {
             position: relative;
@@ -21,6 +20,10 @@
             &__nav {
                 display: flex;
                 max-width: 1920px;
+
+                &__title {
+                    display: none;
+                }
 
                 &__logo {
                     position: relative;
@@ -82,6 +85,9 @@
             }
         }
 
+        &__tickets {
+            display: none;
+        }
 
         &__branding {
             max-width: 1024px;
@@ -138,30 +144,51 @@
             }
 
             button {
+                a {
+                    font-family: Archivo, sans-serif;
+                    font-weight: semibold;
+                    color: variaveis.$corTextoPrincipal;
+                    font-size: 20px;
+                    text-decoration: none;
+                }
+
                 align-items: center;
                 height: 34px;
                 padding: 0px 32px;
                 margin-left: 32px;
                 margin-top: 16px;
                 border: none;
-                font-family: Archivo, sans-serif;
-                font-weight: semibold;
                 background-color: variaveis.$corTextoSecundario;
-                color: variaveis.$corTextoPrincipal;
-                font-size: 20px;
                 border: 2px solid #AA0001;
-                box-shadow: 0 0 5px #AA0001, 0 0 10px #AA0001, 0 0 15px #AA0001, 0 0 20px #AA0001;
+                box-shadow: 0 0 5px #AA0001,
+                0 0 10px #AA0001,
+                0 0 15px #AA0001,
+                0 0 20px #AA0001;
 
                 &:hover {
+                    a {
+                        color: #AA0001;
+                        text-decoration: none;
+                    }
+
                     background-color: #fff;
-                    color: #AA0001;
                     transition: .4s ease;
                     border: 2px solid #fff;
                     border-radius: 10px;
-                    box-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+                    box-shadow: 0 0 20px #fff,
+                    0 0 30px #fff,
+                    0 0 40px #fff,
+                    0 0 50px #fff;
                 }
             }
         }
+
+        &__mbdescription,
+        &__mobilebg {
+            display: none;
+        }
+
+
 
         &__description,
         &__availableTheaters {
@@ -178,5 +205,395 @@
                 margin-bottom: 18px;
             }
         }
+    }
+}
+
+footer {
+    display: none;
+}
+
+
+@media (max-width: 767px) {
+
+    .hero {
+        display: block;
+        position: relative;
+        max-height: 1000px;
+        max-width: 767px;
+        width: 767px;
+        height: auto;
+        background-image: none;
+
+        &__content {
+            max-width: 767px;
+
+            &__navbar {
+                position: absolute;
+
+                &__nav {
+                    z-index: 1;
+                    position: absolute;
+                    height: 10px;
+                    width: 767px;
+                    background-color: #0c0d1a;
+
+                    &__title {
+                        z-index: 1;
+                        display: block;
+                        position: absolute;
+                        margin: 88px 0px 0px 0px;
+                        height: 240px;
+                        width: 270px;
+                        left: 394px;
+                        transform: translate(-50%, -115%);
+                    }
+
+
+
+                    &__logo {
+                        position: absolute;
+                        display: block;
+                        z-index: 0;
+                        transform: translate(18%, -90%);
+                        scale: 150%;
+                    }
+
+                    &__tabs {
+                        display: none;
+                    }
+                }
+
+                &__button {
+                    display: none;
+                }
+            }
+
+            &__mbdescription {
+                margin-top: 36px;
+                display: block;
+                text-align: center;
+                color: variaveis.$corTextoPrincipal;
+                font-family: Archivo, sans-serif;
+                max-width: 767px;
+                height: 572px;
+                justify-self: center;
+
+
+                &--title {
+                    margin-top: 32px;
+                    margin-left: 20px;
+                    position: relative;
+                    height: 90px;
+                    width: 290px;
+                }
+
+                p {
+                    word-wrap: nowrap;
+                    max-width: 600px;
+                    font-size: 32px;
+                    margin-top: 40px;
+                    margin-left: 24px;
+                }
+
+                .youtube__index {
+                    margin-top: 148px;
+
+                    h1 {
+                        font-size: 44px;
+                        margin-bottom: 44px;
+                        text-transform: uppercase;
+                        font-weight: lighter;
+                        font-style: italic;
+                        border-left: 2px solid;
+                        border-right: 2px solid;
+                        border-start-end-radius: 10px;
+                        border-start-start-radius: 10px;
+                        border-end-end-radius: 10px;
+                        border-end-start-radius: 10px;
+                        border-color: gold;
+                        color: variaveis.$corTextoSecundario;
+                    }
+                }
+            }
+
+            &__mobilebg {
+                display: block;
+                justify-self: center;
+                margin-top: 158px;
+
+
+                img {
+                    max-width: 767px;
+                    object-fit: cover;
+                }
+            }
+
+            &__tickets {
+                display: block;
+                color: variaveis.$corTextoPrincipal;
+                text-align: center;
+                font-family: Archivo, sans-serif;
+                font-size: 24px;
+                margin-top: 420px;
+                position: relative;
+
+                button {
+                    a {
+                        text-decoration: none;
+                        color: variaveis.$corTextoPrincipal;
+                    }
+
+                    padding: 12px 42px;
+                    margin-top: 16px;
+                    border: none;
+                    font-family: Archivo, sans-serif;
+                    font-weight: semibold;
+                    background-color: variaveis.$corTextoSecundario;
+                    color:variaveis.$corTextoPrincipal;
+                    font-size: 40px;
+                    border: 2px solid #AA0001;
+                    box-shadow: 0 0 5px #AA0001,
+                    0 0 10px #AA0001,
+                    0 0 15px #AA0001,
+                    0 0 20px #AA0001;
+                }
+
+                h2 {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &__branding {
+                max-width: 767px;
+
+                &__title,
+                &__avatar,
+                &__overlay {
+                    display: none;
+                }
+            }
+
+            &__description,
+            &__availableTheaters {
+                display: none;
+            }
+        }
+    }
+
+    footer {
+        display: block;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .hero {
+        max-width: 1023px;
+        display: block;
+        position: relative;
+        max-height: 1600px;
+        height: 966px;
+        width: 1023px;
+        background-size: contain;
+
+        &__content {
+            max-width: 1023px;
+
+            &__navbar {
+                position: relative;
+                z-index: 1;
+
+                &__nav {
+                    display: flex;
+                    max-width: 1023px;
+
+                    &__title {
+                        display: none;
+                    }
+
+                    &__logo {
+                        position: relative;
+                        margin-left: 3vw;
+                        align-items: center;
+                        margin-top: 18px;
+                        scale: 80%;
+                    }
+
+                    &__tabs {
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        margin-left: 4vw;
+                        margin-top: 14px;
+
+                        &__item {
+                            font-size: 24px;
+                            margin-right: 40px;
+                            font-family: Archivo, sans-serif;
+                            font-size: 22px;
+
+                            &--link {
+                                color: #fff;
+                                text-decoration: none;
+                                cursor: pointer;
+
+                                &:hover {
+                                    color: variaveis.$corTextoSecundario;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &__button {
+                    word-wrap: normal;
+                    align-items: center;
+                    height: 46px;
+                    width: 220px;
+                    padding: 0px 24px;
+                    margin-top: 48px;
+                    margin-left: 10vw;
+                    border: none;
+                    border-radius: 20px;
+                    font-family: Archivo, sans-serif;
+                    font-weight: semibold;
+                    background-color: variaveis.$corTextoSecundario;
+                    color: variaveis.$corTextoPrincipal;
+                    font-size: 20px;
+                    border: 2px solid #AA0001;
+                    box-shadow: 0 0 5px #AA0001, 0 0 10px #AA0001, 0 0 15px #AA0001, 0 0 20px #AA0001;
+                }
+            }
+
+            &__branding {
+                max-width: 1023px;
+
+                &__title {
+                    width: 600px;
+                    position: absolute;
+                    top: 52%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                &__avatar {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 1023px;
+                    scale: 100%;
+                }
+
+                &__overlay {
+                    width: 600px;
+                    position: absolute;
+                    top: 52%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            &__description {
+                display: block;
+                justify-self: center;
+                text-align: center;
+                max-width: 640px;
+                margin-top: 72vh;
+                font-size: 28px;
+                letter-spacing: 1px;
+
+                h2 {
+                    justify-self: center;
+                    text-align: center;
+                    max-width: 140px;
+                    padding: 6px;
+                    font-size: 34px;
+                }
+            }
+
+            &__mbdescription {
+                display: block;
+
+                &--title,
+                p {
+                    display: none;
+                }
+
+                .youtube__index {
+                    margin-top: 148px;
+                    justify-self: center;
+
+                    h1 {
+                        text-align: center;
+                        max-width: 740px;
+                        font-size: 44px;
+                        margin-bottom: 64px;
+                        text-transform: uppercase;
+                        font-family: Archivo, sans-serif;
+                        font-weight: lighter;
+                        font-style: italic;
+                        border-left: 2px solid;
+                        border-right: 2px solid;
+                        border-start-end-radius: 10px;
+                        border-start-start-radius: 10px;
+                        border-end-end-radius: 10px;
+                        border-end-start-radius: 10px;
+                        border-color: gold;
+                        color: variaveis.$corTextoSecundario;
+                    }
+                }
+            }
+
+            &__tickets {
+                display: block;
+                height: 240px;
+                margin-top: 120px;
+                position: relative;
+                color: variaveis.$corTextoPrincipal;
+                text-align: center;
+                font-family: Archivo, sans-serif;
+                font-size: 24px;
+
+                button {
+                    a {
+                        text-decoration: none;
+                        color: variaveis.$corTextoPrincipal;
+                    }
+
+                    padding: 12px 42px;
+                    margin-top: 16px;
+                    border: none;
+                    font-family: Archivo,
+                    sans-serif;
+                    font-weight: semibold;
+                    background-color: variaveis.$corTextoSecundario;
+                    color:variaveis.$corTextoPrincipal;
+                    font-size: 40px;
+                    border: 2px solid #AA0001;
+                    box-shadow: 0 0 5px #AA0001,
+                    0 0 10px #AA0001,
+                    0 0 15px #AA0001,
+                    0 0 20px #AA0001;
+                }
+
+                h2 {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &__availableTheaters {
+                display: none;
+            }
+        }
+    }
+
+    footer {
+        display: none;
     }
 }
