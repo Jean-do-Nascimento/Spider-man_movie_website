@@ -90,7 +90,7 @@
         }
 
         &__branding {
-            max-width: 1024px;
+            max-width: 1023px;
 
             &__title {
                 width: 1080px;
@@ -216,16 +216,15 @@ footer {
 @media (max-width: 767px) {
 
     .hero {
+        max-height: 1000px;
+        max-width: 100vw;
+        width: 100%;
         display: block;
         position: relative;
-        max-height: 1000px;
-        max-width: 767px;
-        width: 767px;
-        height: auto;
         background-image: none;
 
         &__content {
-            max-width: 767px;
+            max-width: 100vw;
 
             &__navbar {
                 position: absolute;
@@ -233,19 +232,18 @@ footer {
                 &__nav {
                     z-index: 1;
                     position: absolute;
-                    height: 10px;
-                    width: 767px;
+                    width: 100vw;
                     background-color: #0c0d1a;
 
                     &__title {
                         z-index: 1;
                         display: block;
                         position: absolute;
-                        margin: 88px 0px 0px 0px;
-                        height: 240px;
-                        width: 270px;
-                        left: 394px;
-                        transform: translate(-50%, -115%);
+                        margin: 136px 0px 0px 0px;
+                        height: 110px;
+                        width: 110px;
+                        left: 55%;
+                        transform: translate(-70%, -205%);
                     }
 
 
@@ -254,8 +252,8 @@ footer {
                         position: absolute;
                         display: block;
                         z-index: 0;
-                        transform: translate(18%, -90%);
-                        scale: 150%;
+                        transform: translate(-30%, -150%);
+                        scale: 70%;
                     }
 
                     &__tabs {
@@ -274,33 +272,36 @@ footer {
                 text-align: center;
                 color: variaveis.$corTextoPrincipal;
                 font-family: Archivo, sans-serif;
-                max-width: 767px;
+                max-width: 100vw;
                 height: 572px;
                 justify-self: center;
 
 
                 &--title {
+                    justify-self: center;
                     margin-top: 32px;
-                    margin-left: 20px;
                     position: relative;
-                    height: 90px;
-                    width: 290px;
+                    height: 50px;
+                    width: 200px;
                 }
 
                 p {
                     word-wrap: nowrap;
-                    max-width: 600px;
-                    font-size: 32px;
+                    max-width: 100vw;
+                    font-size: 20px;
                     margin-top: 40px;
                     margin-left: 24px;
+                    margin-right: 24px;
                 }
 
                 .youtube__index {
                     margin-top: 148px;
 
                     h1 {
-                        font-size: 44px;
+                        font-size: 28px;
                         margin-bottom: 44px;
+                        margin-right: 32px;
+                        margin-left: 32px;
                         text-transform: uppercase;
                         font-weight: lighter;
                         font-style: italic;
@@ -319,43 +320,47 @@ footer {
             &__mobilebg {
                 display: block;
                 justify-self: center;
-                margin-top: 158px;
+                margin-top: 88px;
 
 
                 img {
-                    max-width: 767px;
+                    max-width: 100vw;
                     object-fit: cover;
                 }
             }
 
             &__tickets {
                 display: block;
+                max-width: 80vw;
+                justify-self: center;
                 color: variaveis.$corTextoPrincipal;
                 text-align: center;
                 font-family: Archivo, sans-serif;
-                font-size: 24px;
-                margin-top: 420px;
+                font-size: 20px;
+                margin-top: 140px;
                 position: relative;
 
                 button {
                     a {
                         text-decoration: none;
-                        color: variaveis.$corTextoPrincipal;
+                        color: variaveis.$corTextoSecundario;
                     }
 
-                    padding: 12px 42px;
-                    margin-top: 16px;
-                    border: none;
-                    font-family: Archivo, sans-serif;
-                    font-weight: semibold;
-                    background-color: variaveis.$corTextoSecundario;
-                    color:variaveis.$corTextoPrincipal;
-                    font-size: 40px;
-                    border: 2px solid #AA0001;
-                    box-shadow: 0 0 5px #AA0001,
-                    0 0 10px #AA0001,
-                    0 0 15px #AA0001,
-                    0 0 20px #AA0001;
+                    padding: 12px 32px;
+                    margin-top: 30px;
+                    border-radius: 10px;
+                    font-family: Archivo,
+                    sans-serif;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    background-color: variaveis.$corTextoPrincipal;
+                    color: variaveis.$corTextoSecundario;
+                    font-size: 30px;
+                    border: 2px solid #fff;
+                    box-shadow: 0 0 5px #fff,
+                    0 0 10px #fff,
+                    0 0 15px #fff,
+                    0 0 20px #fff;
                 }
 
                 h2 {
@@ -364,7 +369,7 @@ footer {
             }
 
             &__branding {
-                max-width: 767px;
+                max-width: 100vw;
 
                 &__title,
                 &__avatar,
@@ -389,55 +394,63 @@ footer {
 @media (min-width: 768px) and (max-width: 1023px) {
 
     .hero {
-        max-width: 1023px;
+        max-height: 1600px;
+        max-width: 100vw;
+        width: 100%;
         display: block;
         position: relative;
-        max-height: 1600px;
-        height: 966px;
-        width: 1023px;
-        background-size: contain;
+        background-image: none;
 
         &__content {
-            max-width: 1023px;
+            max-width: 100vw;
 
             &__navbar {
-                max-width: 800px;
-                position: relative;
-                z-index: 1;
+                position: absolute;
 
                 &__nav {
-                    display: flex;
+                    z-index: 1;
+                    position: absolute;
+                    width: 100vw;
+                    background-color: #0c0d1a;
 
                     &__title {
+                        z-index: 1;
                         display: none;
+                        position: absolute;
+                        margin: 136px 0px 0px 0px;
+                        height: 110px;
+                        width: 110px;
+                        left: 55%;
+                        transform: translate(-70%, -205%);
                     }
 
+
+
                     &__logo {
-                        position: relative;
-                        margin-left: 3vw;
-                        align-items: center;
-                        margin-top: 18px;
-                        scale: 80%;
+                        position: absolute;
+                        display: block;
+                        z-index: 0;
+                        transform: translate(-60%, -120%);
+                        scale: 70%;
                     }
 
                     &__tabs {
                         list-style: none;
                         display: flex;
                         align-items: center;
-                        margin-left: 4vw;
-                        margin-top: 14px;
-                        margin-right: 0;
+                        margin-left: 14vw;
+                        margin-top: -24px;
+                        padding-bottom: 49px;
 
                         &__item {
-                            font-size: 24px;
-                            margin-right: 40px;
                             font-family: Archivo, sans-serif;
-                            font-size: 22px;
+                            margin: 0;
 
                             &--link {
                                 color: #fff;
                                 text-decoration: none;
-                                cursor: pointer;
+                                font-size: 18px;
+                                margin-right: 22px;
 
                                 &:hover {
                                     color: variaveis.$corTextoSecundario;
@@ -448,14 +461,11 @@ footer {
                 }
 
                 &__button {
-                    text-wrap: nowrap;
-                    word-spacing: normal;
+                    word-wrap: normal;
                     align-items: center;
-                    height: 46px;
-                    max-width: 320px;
-                    padding: 0px 14px;
-                    margin-top: 48px;
-                    margin-left: 4vw;
+                    height: 40px;
+                    padding: 0px 24px;
+                    margin: -28px 20px 0px 80px;
                     border: none;
                     border-radius: 20px;
                     font-family: Archivo, sans-serif;
@@ -468,76 +478,54 @@ footer {
                 }
             }
 
-            &__branding {
-                max-width: 1023px;
-
-                &__title {
-                    width: 600px;
-                    position: absolute;
-                    top: 52%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    max-width: 100%;
-                    height: auto;
-                }
-
-                &__avatar {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    width: 1023px;
-                    scale: 100%;
-                }
-
-                &__overlay {
-                    width: 600px;
-                    position: absolute;
-                    top: 52%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    max-width: 100%;
-                    height: auto;
-                }
-            }
-
-            &__description {
-                display: block;
-                justify-self: center;
-                text-align: center;
-                max-width: 640px;
-                padding-top: 30%;
-                font-size: 28px;
-                letter-spacing: 1px;
-
-                h2 {
-                    justify-self: center;
-                    text-align: center;
-                    max-width: 140px;
-                    padding: 6px;
-                    font-size: 34px;
-                }
-            }
-
             &__mbdescription {
+                display: none;
+                margin-top: 36px;
                 display: block;
+                text-align: center;
+                color: variaveis.$corTextoPrincipal;
+                font-family: Archivo, sans-serif;
+                max-width: 100vw;
+                height: 272px;
+                justify-self: center;
 
-                &--title,
+
+                &--title {
+                    display: none;
+                    justify-self: center;
+                    margin-top: 32px;
+                    position: relative;
+                    height: 50px;
+                    width: 200px;
+                }
+
                 p {
                     display: none;
+                    word-wrap: nowrap;
+                    max-width: 100vw;
+                    font-size: 20px;
+                    margin-top: 40px;
+                    margin-left: 24px;
+                    margin-right: 24px;
                 }
 
                 .youtube__index {
-                    margin-top: 148px;
+                    margin: 36vh 0px 0px 0px;
+                    max-width: 100vw;
                     justify-self: center;
 
+
+                    iframe {
+                        height: 236px;
+                        width: 420px;
+                    }
+
+
                     h1 {
-                        text-align: center;
-                        max-width: 740px;
-                        font-size: 44px;
-                        margin-bottom: 64px;
+                        width: 74vw;
+                        margin-bottom: 21px;
+                        font-size: 34px;
                         text-transform: uppercase;
-                        font-family: Archivo, sans-serif;
                         font-weight: lighter;
                         font-style: italic;
                         border-left: 2px solid;
@@ -552,42 +540,377 @@ footer {
                 }
             }
 
+            &__mobilebg {
+                display: block;
+                margin-top: 88px;
+
+
+                img {
+                    max-width: 100vw;
+                    object-fit: cover;
+                }
+            }
+
             &__tickets {
                 display: block;
-                height: 240px;
-                margin-top: 120px;
-                position: relative;
+                max-width: 80vw;
+                min-height: 220px;
+                justify-self: center;
                 color: variaveis.$corTextoPrincipal;
                 text-align: center;
                 font-family: Archivo, sans-serif;
-                font-size: 24px;
+                font-size: 20px;
+                margin: 80px 0px 0px 0px;
+                position: relative;
 
                 button {
                     a {
                         text-decoration: none;
-                        color: variaveis.$corTextoPrincipal;
+                        color: variaveis.$corTextoSecundario;
                     }
 
-                    padding: 12px 42px;
-                    margin-top: 16px;
-                    border: none;
-                    font-family: Archivo,
-                    sans-serif;
-                    font-weight: semibold;
-                    background-color: variaveis.$corTextoSecundario;
-                    color:variaveis.$corTextoPrincipal;
-                    font-size: 40px;
-                    border: 2px solid #AA0001;
-                    box-shadow: 0 0 5px #AA0001,
-                    0 0 10px #AA0001,
-                    0 0 15px #AA0001,
-                    0 0 20px #AA0001;
+                    padding: 12px 32px;
+                    margin-top: 30px;
+                    border-radius: 10px;
+                    font-family: Archivo, sans-serif;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    background-color: variaveis.$corTextoPrincipal;
+                    color: variaveis.$corTextoSecundario;
+                    font-size: 30px;
+                    border: 2px solid #fff;
+                    box-shadow: 0 0 5px #fff,
+                    0 0 10px #fff,
+                    0 0 15px #fff,
+                    0 0 20px #fff;
                 }
 
                 h2 {
                     margin-bottom: 20px;
                 }
             }
+
+            &__branding {
+                max-width: 100vw;
+
+                &__title {
+                    width: 80vw;
+                    position: absolute;
+                    top: 47vh;
+                    left: 50%;
+                    transform: translate(-50%, -24vh);
+
+                }
+
+                &__avatar {
+                    width: auto;
+                    position: absolute;
+                    top: 30vh;
+                    left: 51%;
+                    transform: translate(-51%, -30vh);
+                    scale: 100%;
+                }
+
+                &__overlay {
+                    width: 80vw;
+                    position: absolute;
+                    top: 47vh;
+                    left: 50%;
+                    transform: translate(-50%, -24vh);
+                }
+            }
+
+            &__description {
+                max-width: 100vw;
+                min-height: 220px;
+                margin-top: 73%;
+                margin-left: 11%;
+                position: absolute;
+
+                h2 {
+                    justify-self: center;
+                    max-width: 120px;
+                    padding: 6px;
+                    font-size: 28px;
+                }
+
+                p {
+                    justify-self: center;
+                    width: 80vw;
+                    text-align: center;
+                    font-size: 26px;
+
+                }
+            }
+
+
+
+            &__availableTheaters {
+                display: none;
+            }
+        }
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+
+    .hero {
+        max-height: 1600px;
+        max-width: 100vw;
+        width: 100%;
+        display: block;
+        position: relative;
+        background-image: none;
+
+        &__content {
+            max-width: 100vw;
+
+            &__navbar {
+                position: absolute;
+
+                &__nav {
+                    z-index: 1;
+                    position: absolute;
+                    width: 100vw;
+                    background-color: #0c0d1a;
+
+                    &__title {
+                        z-index: 1;
+                        display: none;
+                        position: absolute;
+                        margin: 136px 0px 0px 0px;
+                        height: 110px;
+                        width: 110px;
+                        left: 55%;
+                        transform: translate(-70%, -205%);
+                    }
+
+
+
+                    &__logo {
+                        position: absolute;
+                        display: block;
+                        z-index: 0;
+                        transform: translate(-60%, -120%);
+                        scale: 70%;
+                    }
+
+                    &__tabs {
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        margin-left: 14vw;
+                        margin-top: -24px;
+                        padding-bottom: 49px;
+
+                        &__item {
+                            font-family: Archivo, sans-serif;
+                            margin: 0;
+
+                            &--link {
+                                color: #fff;
+                                text-decoration: none;
+                                font-size: 18px;
+                                margin-right: 22px;
+
+                                &:hover {
+                                    color: variaveis.$corTextoSecundario;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &__button {
+                    word-wrap: normal;
+                    align-items: center;
+                    height: 40px;
+                    padding: 0px 24px;
+                    margin: -28px 20px 0px 80px;
+                    border: none;
+                    border-radius: 20px;
+                    font-family: Archivo, sans-serif;
+                    font-weight: semibold;
+                    background-color: variaveis.$corTextoSecundario;
+                    color: variaveis.$corTextoPrincipal;
+                    font-size: 20px;
+                    border: 2px solid #AA0001;
+                    box-shadow: 0 0 5px #AA0001, 0 0 10px #AA0001, 0 0 15px #AA0001, 0 0 20px #AA0001;
+                }
+            }
+
+            &__mbdescription {
+                display: none;
+                margin-top: 36px;
+                display: block;
+                text-align: center;
+                color: variaveis.$corTextoPrincipal;
+                font-family: Archivo, sans-serif;
+                max-width: 100vw;
+                height: 272px;
+                justify-self: center;
+
+
+                &--title {
+                    display: none;
+                    justify-self: center;
+                    margin-top: 32px;
+                    position: relative;
+                    height: 50px;
+                    width: 200px;
+                }
+
+                p {
+                    display: none;
+                    word-wrap: nowrap;
+                    max-width: 100vw;
+                    font-size: 20px;
+                    margin-top: 40px;
+                    margin-left: 24px;
+                    margin-right: 24px;
+                }
+
+                .youtube__index {
+                    margin: 36vh 0px 0px 0px;
+                    max-width: 100vw;
+                    justify-self: center;
+
+
+                    iframe {
+                        height: 236px;
+                        width: 420px;
+                    }
+
+
+                    h1 {
+                        width: 74vw;
+                        margin-bottom: 21px;
+                        font-size: 34px;
+                        text-transform: uppercase;
+                        font-weight: lighter;
+                        font-style: italic;
+                        border-left: 2px solid;
+                        border-right: 2px solid;
+                        border-start-end-radius: 10px;
+                        border-start-start-radius: 10px;
+                        border-end-end-radius: 10px;
+                        border-end-start-radius: 10px;
+                        border-color: gold;
+                        color: variaveis.$corTextoSecundario;
+                    }
+                }
+            }
+
+            &__mobilebg {
+                display: block;
+                margin-top: 88px;
+
+
+                img {
+                    max-width: 100vw;
+                    object-fit: cover;
+                }
+            }
+
+            &__tickets {
+                display: block;
+                max-width: 80vw;
+                min-height: 220px;
+                justify-self: center;
+                color: variaveis.$corTextoPrincipal;
+                text-align: center;
+                font-family: Archivo, sans-serif;
+                font-size: 20px;
+                margin: 80px 0px 0px 0px;
+                position: relative;
+
+                button {
+                    a {
+                        text-decoration: none;
+                        color: variaveis.$corTextoSecundario;
+                    }
+
+                    padding: 12px 32px;
+                    margin-top: 30px;
+                    border-radius: 10px;
+                    font-family: Archivo, sans-serif;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    background-color: variaveis.$corTextoPrincipal;
+                    color: variaveis.$corTextoSecundario;
+                    font-size: 30px;
+                    border: 2px solid #fff;
+                    box-shadow: 0 0 5px #fff,
+                    0 0 10px #fff,
+                    0 0 15px #fff,
+                    0 0 20px #fff;
+                }
+
+                h2 {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &__branding {
+                max-width: 100vw;
+
+                &__title {
+                    width: 80vw;
+                    position: absolute;
+                    top: 47vh;
+                    left: 50%;
+                    transform: translate(-50%, -24vh);
+
+                }
+
+                &__avatar {
+                    width: auto;
+                    position: absolute;
+                    top: 30vh;
+                    left: 51%;
+                    transform: translate(-51%, -30vh);
+                    scale: 100%;
+                }
+
+                &__overlay {
+                    width: 80vw;
+                    position: absolute;
+                    top: 47vh;
+                    left: 50%;
+                    transform: translate(-50%, -24vh);
+                }
+            }
+
+            &__description {
+                max-width: 100vw;
+                min-height: 220px;
+                margin-top: 73%;
+                margin-left: 11%;
+                position: absolute;
+
+                h2 {
+                    justify-self: center;
+                    max-width: 120px;
+                    padding: 6px;
+                    font-size: 28px;
+                }
+
+                p {
+                    justify-self: center;
+                    width: 80vw;
+                    text-align: center;
+                    font-size: 26px;
+
+                }
+            }
+
+
 
             &__availableTheaters {
                 display: none;
