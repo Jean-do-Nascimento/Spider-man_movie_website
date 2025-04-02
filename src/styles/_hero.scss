@@ -90,10 +90,10 @@
         }
 
         &__branding {
-            max-width: 1023px;
+            max-width: 100vw;
 
             &__title {
-                width: 1080px;
+                width: 56.5vw;
                 position: absolute;
                 top: 52%;
                 left: 50%;
@@ -105,9 +105,9 @@
             &__avatar {
                 position: absolute;
                 top: 50%;
-                left: 50%;
+                left: 50.1%;
                 transform: translate(-50%, -50%);
-                width: 1920px;
+                width: 100vw;
                 height: auto;
             }
 
@@ -691,21 +691,19 @@ footer {
                         transform: translate(-70%, -205%);
                     }
 
-
-
                     &__logo {
                         position: absolute;
                         display: block;
                         z-index: 0;
-                        transform: translate(-60%, -120%);
-                        scale: 70%;
+                        transform: translate(-30%, -80%);
+                        scale: 100%;
                     }
 
                     &__tabs {
                         list-style: none;
                         display: flex;
                         align-items: center;
-                        margin-left: 14vw;
+                        margin-left: 20vw;
                         margin-top: -24px;
                         padding-bottom: 49px;
 
@@ -716,8 +714,8 @@ footer {
                             &--link {
                                 color: #fff;
                                 text-decoration: none;
-                                font-size: 18px;
-                                margin-right: 22px;
+                                font-size: 24px;
+                                margin-right: 30px;
 
                                 &:hover {
                                     color: variaveis.$corTextoSecundario;
@@ -732,7 +730,7 @@ footer {
                     align-items: center;
                     height: 40px;
                     padding: 0px 24px;
-                    margin: -28px 20px 0px 80px;
+                    margin: -28px 30px 0px 60px;
                     border: none;
                     border-radius: 20px;
                     font-family: Archivo, sans-serif;
